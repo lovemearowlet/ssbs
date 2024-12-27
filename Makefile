@@ -1,5 +1,5 @@
 make:
-	cc -o ssbs main.cc
+	cc -o ssbs main.c
 install: make
 	cp ssbs /bin/
 uninstall:
