@@ -16,6 +16,7 @@ rm -rf neofetch
 ```
 ## to install:
 ```
+git clone https://github.com/lovemearowlet/ssbs.git
 make
 sudo (or doas) make install
 ```
