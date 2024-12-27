@@ -24,6 +24,11 @@ sudo (or doas) make install
 ```
 sudo make uninstall
 ```
+## usage:
+```
+ssbs -f /path/to/file.ssbs
+```
+make sure to review the file that you are installing!
 ## info:
 - Makefile is very generic so feel free to edit to your liking!
 - Made by SP649
