@@ -14,3 +14,6 @@ cd -
 rm -rf neofetch
 <end>
 ```
+## info:
+- Made by SP649
+- Lines of code (this version): 99
