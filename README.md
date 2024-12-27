@@ -14,6 +14,16 @@ cd -
 rm -rf neofetch
 <end>
 ```
+## to install:
+```
+make
+sudo (or doas) make install
+```
+## to uninstall:
+```
+sudo make uninstall
+```
 ## info:
+- Makefile is very generic so feel free to edit to your liking!
 - Made by SP649
-- Lines of code (this version): 99
+- Lines of code (counting makefile): 105
