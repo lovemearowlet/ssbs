@@ -39,5 +39,5 @@ make sure to review the file that you are installing!
 ## to do
 - add a config file 
 - add a build directory
-- add more functions
+- add dependancy thing
 - add a way to ask for conformation
