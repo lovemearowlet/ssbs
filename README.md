@@ -1,5 +1,5 @@
 # ssbs (0.2)
-SP649's Simple Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! loook below for a example called neofetch-7.1.0.ssbs:
+SP649's Simple Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! I got upset on how complicated modern build scripts are like ebuilds and other arch pkgbuilds. Like why does it need to be complicated? They also look ugly in my opinion, so I made my own personal take on it. Look below for a example called neofetch-7.1.0.ssbs:
 ```
 <start>
 <pkgname>
@@ -16,6 +16,7 @@ cd -
 rm -rf neofetch
 <end>
 ```
+Do you like it? If so then try packaging a few things! 
 ## to install:
 ```
 git clone https://github.com/lovemearowlet/ssbs.git
@@ -34,8 +35,9 @@ make sure to review the file that you are installing!
 ## info:
 - Makefile is very generic so feel free to edit to your liking!
 - Made by SP649
-- Lines of code (counting makefile): 105
+- Lines of code (counting makefile): 138
 ## to do
 - add a config file 
 - add a build directory
-- add more functions 
+- add more functions
+- add a way to ask for conformation
