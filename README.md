@@ -1,15 +1,13 @@
 # ssbs (0.2)
-SP649's Simple Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! loook below for a example called neofetch-7.1.0-min.ssbs:
+SP649's Simple Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! loook below for a example called neofetch-7.1.0.ssbs:
 ```
 <start>
 <pkgname>
 neofetch
 <version>
-7.1.0 (minimal)
+7.1.0
 <repo>
 https://github.com/dylanaraps/neofetch.git
-<info>
-Dependancys are bash 3.2+ (minimal) 
 <exec>
 git clone https://github.com/dylanaraps/neofetch.git
 cd neofetch
