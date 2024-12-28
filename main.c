@@ -3,13 +3,15 @@
 #include <string.h>
 #include <unistd.h>
 
+// TODO: add a config file
+
 int main(int argc, char *argv[]) {
 
    int flagSet;
    int opt;
    char execfile[256] = ""; 
 
-   while((opt = getopt(argc, argv, ":f:")) != -1)  {  
+   while((opt = getopt(argc, argv, ":f:")) != -1)  {  //this is easier than long opts and -1 dependancy
         switch(opt)  
         {  
             case 'f':  
@@ -34,10 +36,10 @@ int main(int argc, char *argv[]) {
    FILE* file = fopen(execfile, "r");
    char line[256];
 
-   if (file != NULL) {
+   if (file != NULL) {//hope it aint null
       while (fgets(line, sizeof(line), file)) {
          line[strcspn(line, "\n")] = '\0';  
-
+         // i may add a dpendancy thing later
          if (strncmp(line, "<exec>", 6) == 0) {
             flagSet = 1;
          } else if (strncmp(line, "<info>", 6) == 0) {
@@ -51,10 +53,16 @@ int main(int argc, char *argv[]) {
             break;  
          } else if (strncmp(line, "<start>", 7) == 0) {
             printf("Starting Script\n");
-         } 
+         } else if (strncmp(line, "<pkgname>", 6) == 0) {
+            flagSet = 4;//i gotta get rid of this int controlling 
+         } else if (strncmp(line, "<version>", 5) == 0) {
+            flagSet = 5;
+         } else if (strncmp(line, "<repo>", 5) == 0) {
+            flagSet = 6;
+         }
 
          if (flagSet == 0) {
-            if (strncmp(line, "<com>", 5) == 0) {
+            if (strncmp(line, "<com>", 5) == 0) {// TODO: make this better maybe use a // or # for comments
 
             } else {
 
@@ -62,7 +70,7 @@ int main(int argc, char *argv[]) {
          }
 
          if (flagSet == 1) {
-            if (strncmp(line, "<exec>", 5) == 0) {
+            if (strncmp(line, "<exec>", 5) == 0) {//might switch exec to pkgcmds but idk
 
             } else {
                printf("Executing: %s\n", line);
@@ -88,6 +96,31 @@ int main(int argc, char *argv[]) {
                printf("%s\n", line);
             }
          }
+
+         if (flagSet == 4) {
+            if (strncmp(line, "<pkgname>", 5) == 0) {
+
+            } else {
+               printf("Package Name: %s\n", line);
+            }
+         }
+
+         if (flagSet == 5) {
+            if (strncmp(line, "<version>", 5) == 0) {
+
+            } else {
+               printf("Version: %s\n", line);
+            }
+         }
+
+         if (flagSet == 6) {
+            if (strncmp(line, "<repo>", 5) == 0) {
+
+            } else {
+               printf("Repo: %s\n", line);
+            }
+         }
+
       }
 
       fclose(file);
@@ -95,5 +128,5 @@ int main(int argc, char *argv[]) {
    } else {
       fprintf(stderr, "File unable to be read\n");
    }
-   return 0;
+   return 0;//must return 0
 }
