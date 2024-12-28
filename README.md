@@ -33,3 +33,7 @@ make sure to review the file that you are installing!
 - Makefile is very generic so feel free to edit to your liking!
 - Made by SP649
 - Lines of code (counting makefile): 105
+## to do
+- add a config file 
+- add a build directory
+- add more functions 
