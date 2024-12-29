@@ -1,0 +1,16 @@
+<start>
+<pkgname>
+Vim
+<version>
+9.1.0967
+<repo>
+https://github.com/dylanaraps/neofetch.git
+<exec>
+git clone https://github.com/dylanaraps/neofetch.git
+cd vim
+cd src
+make
+sudo make install
+cd -
+rm -rf vim
+<end>
