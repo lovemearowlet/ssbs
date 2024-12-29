@@ -1,0 +1,14 @@
+<start>
+<pkgname>
+neofetch
+<version>
+7.1.0
+<repo>
+https://github.com/dylanaraps/neofetch.git
+<exec>
+git clone https://github.com/dylanaraps/neofetch.git
+cd neofetch
+sudo make install
+cd -
+rm -rf neofetch
+<end>
