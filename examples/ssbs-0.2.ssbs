@@ -1,0 +1,15 @@
+<start>
+<pkgname>
+ssbs
+<version>
+v0.2
+<repo>
+https://github.com/lovemearowlet/ssbs.git
+<exec>
+git clone https://github.com/lovemearowlet/ssbs.git
+cd ssbs
+make
+sudo make install
+cd -
+rm -rf ssbs
+<end>
