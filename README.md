@@ -1,5 +1,5 @@
 # ssbs (0.2)
-SP649's Simple Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! I got upset on how complicated modern build scripts are like ebuilds and other arch pkgbuilds. Like why does it need to be complicated? They also look ugly in my opinion, so I made my own personal take on it. Look below for a example called neofetch-7.1.0.ssbs:
+Simple Software Build Script - a small interpiter for a ssbs a small build script for any distro that is minimal as of now! I got upset on how complicated modern build scripts are like ebuilds and other arch pkgbuilds. Like why does it need to be complicated? They also look ugly in my opinion, so I made my own personal take on it. Look below for a example called neofetch-7.1.0.ssbs:
 ```
 <start>
 <pkgname>
