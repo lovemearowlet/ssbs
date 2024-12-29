@@ -41,3 +41,4 @@ make sure to review the file that you are installing!
 - add a build directory
 - add dependancy thing
 - add a way to ask for conformation
+- add a option for variables and taking input
