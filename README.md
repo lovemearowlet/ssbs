@@ -35,7 +35,7 @@ make sure to review the file that you are installing!
 ## info:
 - Makefile is very generic so feel free to edit to your liking!
 - Made by SP649
-- Lines of code (Makefile + main.c): 138
+- Lines of code (Makefile + main.c): ~114
 ## to do
 - add a config file 
 - add a build directory
